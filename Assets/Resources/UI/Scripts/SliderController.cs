@@ -8,8 +8,10 @@ using UnityEngine.UI;
 public class SliderController : MonoBehaviour
 {
     private Slider _slider;
-
+    public GameObject PopUP;
+    public bool ShowPopupOnFeel;
     public float Speed;
+    
     public TextMeshProUGUI text;
     public TextMeshProUGUI FeelText;
     public float DurationInSeconds;
@@ -21,6 +23,8 @@ public class SliderController : MonoBehaviour
     private float progress;
     public bool ProgressiveFeel;
     public Coroutine TimerRoutine;
+    
+    
     void Start()
     {
         _slider = GetComponent<Slider>();
@@ -45,7 +49,6 @@ public class SliderController : MonoBehaviour
                 TimerValue = 0;
             }
             FeelSlider( 100-(progress * 100),1);
-            
         }
     }
 
@@ -78,15 +81,35 @@ public class SliderController : MonoBehaviour
         
     }
 
+    public void RandomValue()
+    {
+        float val = Random.Range(10f, 100f);
+        if (_slider.value > val)
+        {
+            FlushSlider(val);
+        }
+        else
+        {
+            FeelSlider(val);
+        }
+    }
     public void EndFeelSlider()
     {
+        if (ShowPopupOnFeel)
+        {
+           if (_slider.value >=_slider.maxValue)ShowPopup();    
+        }
         
     }
 
+    public void ShowPopup()
+    {
+        PopUP.SetActive(true);
+    }
     public void EndFlushSlider()
     {
         ProgressiveFeel = false;
-        TimerValue = DurationInSeconds;
+        TimerValue = DurationInSeconds * (1 - (_slider.value / _slider.maxValue));
         TimerRoutine = StartCoroutine(Timer());
     }
     
@@ -110,6 +133,6 @@ public class SliderController : MonoBehaviour
         {
             progress = (TimerValue / DurationInSeconds);
         }
-        FeelText.text = (int)_slider.value + "/100";
+        FeelText.text = (int)_slider.value + "/" + _slider.maxValue;
     }
 }
