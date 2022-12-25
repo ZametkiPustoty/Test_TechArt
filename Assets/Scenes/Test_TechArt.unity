@@ -5272,8 +5272,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 000/100
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0bdc51d1861ccfa4b8e230e76807b4fe, type: 2}
+  m_sharedMaterial: {fileID: 8806402454882579996, guid: 0bdc51d1861ccfa4b8e230e76807b4fe,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5303,7 +5304,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5998,8 +5999,9 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0f1def0fe0241c04c93c65d8115d5c19, type: 2}
+  m_sharedMaterial: {fileID: -8719193485040801246, guid: 0f1def0fe0241c04c93c65d8115d5c19,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6442,12 +6444,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '00:00:00
+  m_text: '+5 more 00:00
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ac48518fda0fe00418beed15726a6793, type: 2}
+  m_sharedMaterial: {fileID: 6748176378003756400, guid: ac48518fda0fe00418beed15726a6793,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6466,18 +6469,18 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 97690656
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6535,10 +6538,10 @@ RectTransform:
   m_Father: {fileID: 124043702}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -80, y: -79}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -80.00001, y: -77.8}
+  m_SizeDelta: {x: 174.81601, y: 64.444824}
   m_Pivot: {x: 0.50000006, y: 0.49999997}
 --- !u!1 &901017485
 GameObject:
@@ -6718,8 +6721,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 45/50
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 303b89b4af4900b4cb20cee9947b8f6f, type: 2}
-  m_sharedMaterial: {fileID: 8806402454882579996, guid: 303b89b4af4900b4cb20cee9947b8f6f,
+  m_fontAsset: {fileID: 11400000, guid: 0bdc51d1861ccfa4b8e230e76807b4fe, type: 2}
+  m_sharedMaterial: {fileID: 8806402454882579996, guid: 0bdc51d1861ccfa4b8e230e76807b4fe,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6862,15 +6865,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 93e634ca11be23048bcd0647292f3779, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 396839afd3e0c26448ce34cb6667c1a3, type: 3}
-  m_Type: 2
+  m_Sprite: {fileID: 21300000, guid: 4ceedb02e2319d54387175b88b3046c8, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
