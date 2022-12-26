@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9011938658821418235
 Transform:
   m_ObjectHideFlags: 0
@@ -41,7 +41,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9011938658821418234}
   serializedVersion: 6
-  lengthInSec: 2
+  lengthInSec: 10
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -116,7 +116,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 10
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5073,7 +5073,7 @@ ParticleSystemForceField:
         m_RotationOrder: 4
     m_RotationSpeedCurve:
       serializedVersion: 2
-      minMaxState: 1
+      minMaxState: 0
       scalar: 0.3
       minScalar: 0
       maxCurve:
@@ -5179,29 +5179,29 @@ ParticleSystemForceField:
         m_RotationOrder: 4
     m_DragCurve:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 1
       scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0.5959778
-          value: -0.04260254
-          inSlope: 2.5805573
-          outSlope: 2.5805573
-          tangentMode: 34
+          time: 0
+          value: 5
+          inSlope: -10.514669
+          outSlope: -10.514669
+          tangentMode: 0
           weightedMode: 0
           inWeight: 0
-          outWeight: 0.33333334
+          outWeight: 0.05294619
         - serializedVersion: 3
           time: 1
-          value: 1
-          inSlope: 2.5805573
-          outSlope: 2.5805573
-          tangentMode: 34
+          value: 0
+          inSlope: -0.51674163
+          outSlope: -0.51674163
+          tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0.47109032
           outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -5337,5 +5337,5 @@ ParticleSystemForceField:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    m_MultiplyDragByParticleSize: 0
+    m_MultiplyDragByParticleSize: 1
     m_MultiplyDragByParticleVelocity: 1
