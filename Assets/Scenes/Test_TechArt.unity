@@ -226,10 +226,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9011938658821418233, guid: 6c2740ebf1006314cb4a73a19977449b,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9011938658821418234, guid: 6c2740ebf1006314cb4a73a19977449b,
         type: 3}
       propertyPath: m_Name
       value: Clam Revards VFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011938658821418234, guid: 6c2740ebf1006314cb4a73a19977449b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9011938658821418235, guid: 6c2740ebf1006314cb4a73a19977449b,
         type: 3}
@@ -285,6 +295,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011938660444502341, guid: 6c2740ebf1006314cb4a73a19977449b,
+        type: 3}
+      propertyPath: m_Parameters.m_RotationSpeedCurve.scalar
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c2740ebf1006314cb4a73a19977449b, type: 3}
